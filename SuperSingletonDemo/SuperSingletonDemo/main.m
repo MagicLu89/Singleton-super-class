@@ -13,10 +13,16 @@
 int main(int argc, const char * argv[]) {
     
     MLuFirSingle * mluFir = [MLuFirSingle shareManager];
+    MLuFirSingle * mluFir1 = [MLuFirSingle shareManager];
+    
     MLuSecSingle * mluSec = [MLuSecSingle shareManager];
+    MLuSecSingle * mluSec1 = [MLuSecSingle shareManager];
     
     [mluFir printFirSingleAdd];
+    [mluFir1 printFirSingleAdd];
+    
     [mluSec printSecSingleAdd];
+    [mluSec1 printSecSingleAdd];
     
     return 0;
 }
